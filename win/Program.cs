@@ -151,7 +151,7 @@ namespace Ace
         static bool Update()
         {
             try {
-                string json = Encoding.UTF8.GetString(RequestURL("https://api.github.com/repos/ace-lol/ace/releases").ToArray());
+                string json = Encoding.UTF8.GetString(RequestURL("https://api.github.com/repos/zombiewizzard/ace/releases").ToArray());
                 JsonArray data = SimpleJson.DeserializeObject<JsonArray>(json);
                 if (data.Count < 1) return false;
 
